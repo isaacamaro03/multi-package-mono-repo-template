@@ -1,0 +1,17 @@
+{
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "setupFilesAfterEnv": ["./setupTests.ts"],
+  "collectCoverageFrom": ["./packages/**/src/**"],
+  "coverageThreshold": {
+    "global": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100
+    }
+  },
+  "coveragePathIgnorePatterns": ["index.ts"]
+}

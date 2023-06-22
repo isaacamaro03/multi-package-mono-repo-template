@@ -1,0 +1,45 @@
+{
+  "name": "@my-mono-repo/my-react-package",
+  "version": "0.0.0",
+  "private": false,
+  "keywords": [],
+  "license": "Unlicense",
+  "author": "Isaac Amaro",
+  "description": "Dummy React library.",
+  "files": [
+    "cjs",
+    "esm",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "prepublish": "pnpm build",
+    "build": "node ../../scripts/build.mjs",
+    "prebuild": "rimraf dist",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaacamaro03/multi-package-mono-repo-template.git",
+    "directory": "packages/my-react-package"
+  },
+  "bugs": {
+    "url": "https://github.com/isaacamaro03/multi-package-mono-repo-template/issues"
+  },
+  "homepage": "https://github.com/isaacamaro03/multi-package-mono-repo-template#readme",
+  "devDependencies": {
+    "@types/react": "^18.2.12",
+    "react": "^18.2.0",
+    "typescript": "^5.1.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
+  "types": "./esm/index.d.ts",
+  "dependencies": {
+    "styled-components": "6.0.0-rc.3"
+  },
+  "gitHead": "97dfcbcad0d45fb7421e7d124d2590b07932a6a1"
+}
